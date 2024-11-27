@@ -1,0 +1,51 @@
+<div class="newProduct_container">
+     
+    <label for="newProduct_geography">Агрегат по географии</label>
+    <select id="newProduct_geography">
+        <option value="option1">Все</option>
+        <option value="option2">Страна</option>
+        <option value="option3">Регион</option>
+        <option value="option4">Город</option>
+        <option value="option5">Магазин</option>
+    </select>
+
+    <label for="newProduct_groupScu">По группе SCU</label>
+    <select id="newProduct_groupScu">
+        <option value="option1">группа 1</option>
+        <option value="option2">группа 2</option>
+        <option value="option3">группа 3</option>
+        <option value="option4">...</option>
+    </select>
+
+    <label for="newProduct_groupAnother">Другие классификации</label>
+    <select id="newProduct_groupAnother">
+        <option value="option1">ABC</option>
+        <option value="option2">XYZ</option>
+        <option value="option3">Ценовой сегмент</option>
+    </select>
+
+    <div class="newProduct_calculate">
+        <button id="newProduct_calculate_forecastButton">Рассчитать прогноз</button>
+        <select id="newProduct_scenario">
+            <option value="option1">сценарий 1</option>
+            <option value="option2">сценарий 2</option>
+            <option value="option3">сценарий 3</option>
+        </select>
+    </div>
+    <button id="newProduct_optimizeButton">Оптимизировать</button>
+</div>
+
+ 
+<section class="newProduct__preview">
+    <div class="newProduct__results">
+        <button onclick="tb_newProduct__results()"  id="newProduct_resultsButton">Итоги</button>
+        <iframe  id="tb_newProduct_results" src=""></iframe>
+    </div>
+    <div class="newProduct__chart">
+        <button onclick="tb_newProduct__chart()"  id="newProduct_chartButton">Chart</button>
+        <iframe  id="tb_newProduct_chart" src=""></iframe>
+        </section>
+    </div>
+    
+        <button  id="newProduct_exportButton">Экспорт данных</button>
+

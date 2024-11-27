@@ -1,0 +1,33 @@
+<div class="promo_container">
+     
+    <label for="promo_ratio">Выбор коэффициента</label>
+    <select id="promo_method">
+        <option value="option2">Рассчитанные</option>
+        <option value="option1">Пользовательские</option>
+    </select>
+
+    <div class="promo_calculate">
+    <button id="promo_calculate_forecastButton">Рассчитать прогноз</button>
+    <select id="promo_scenario">
+        <option value="option2">сценарий 1</option>
+        <option value="option1">сценарий 2</option>
+        <option value="option2">сценарий 3</option>
+    </select>
+</div>
+    <button id="promo_optimizeButton">Оптимизировать</button>
+</div>
+
+ 
+<section class="promo__preview">
+    <div class="promo__results">
+        <button onclick="tb_promo__results()"  id="promo_resultsButton">Preview</button>
+        <iframe  id="tb_promo_results" src=""></iframe>
+    </div>
+    <div class="promo__chart">
+        <button onclick="tb_promo__chart()"  id="promo_chartButton">Chart</button>
+        <iframe  id="tb_promo_chart" src="" ></iframe>
+        </section>
+    </div>
+    
+        <button  id="promo_exportButton">Экспорт данных</button>
+

@@ -1,0 +1,50 @@
+<div class="seasonality_contaier">
+    
+    <label for="seasonality_aggregate">Агрегат по времени</label>
+    <select id="seasonality_aggregate">
+        <option value="option2">День</option>
+        <option value="option1">Неделя</option>
+        <option value="option2">Месяц</option>
+        <option value="option2">Квартал</option>
+    </select>
+
+    <label for="seasonality_geography">Агрегат по географии</label>
+    <select id="seasonality_geography">
+        <option value="option2">Все</option>
+        <option value="option1">Страна</option>
+        <option value="option2">Регион/option>
+        <option value="option2">Город</option>
+        <option value="option2">Магазин</option>
+    </select>
+
+    <label for="seasonality_groupSCU">По группе SCU</label>
+    <select id="seasonality_groupSCU">
+        <option value="option2">Группа1</option>
+        <option value="option1">Группа2</option>
+        <option value="option2">Группа3</option>
+        <option value="option2">Группа4</option>
+        <option value="option2">Группа5</option>
+    </select>
+
+    <label for="seasonality_method">Метод расчета сезонности</label>
+    <select id="seasonality_method">
+        <option value="option2">Среднее</option>
+        <option value="option1">С очисткой от тренда</option>
+        <option value="option2">Сглаженные продажи</option>
+    </select>
+
+    <!-- <label for="seasonality_date-creation">Дата создания</label>
+    <input type="date" id="action_date-creation" name="action_date-creation" required min="2024-11-14"> -->
+
+    <!-- кнопка сохранить -->
+
+    <button id="seasonality_saveButton">Сохранить изменения</button>
+
+      <!-- кнопка скачать шаблон
+    <button id="seasonality_action_templateButton">Скачать шаблон</button> -->
+
+     <!-- кнопка загрузить-->
+    <button onclick="tb_seasonality()" id="seasonality_previewButton">Preview</button>
+</div>
+
+<iframe  id="tb_seasonality" src="" width="1300" height="400"></iframe>
