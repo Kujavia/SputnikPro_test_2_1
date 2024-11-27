@@ -1,10 +1,13 @@
+import regular_assortTable from '/images/table_regAssort.png';
+
+
 /*вставка картинки regular_asort*/
 export default window.tb_regular_assort__results = function(){
     // const imageUrl = '/SputnikPro_test_2/public/images/table_regAssort.png';
     // document.getElementById('tb_regular_assort_results').src = imageUrl;
 
     const iframe = document.getElementById('tb_regular_assort_results');
-    const imageUrl = '/SputnikPro_test_2_1/public/images/table_regAssort.png';
+    const imageUrl = regular_assortTable;
 
     // Устанавливаем содержимое iframe
     const doc = iframe.contentDocument || iframe.contentWindow.document;

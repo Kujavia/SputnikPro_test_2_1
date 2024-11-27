@@ -382,18 +382,22 @@ window.tb_seasonality = function(){
 
 
 import imageZE from '/images/users/ZilevichElizaveta.jpg';
+import imageTO from '/images/users/TkachevOleg.jpg';
+import imageTG from '/images/users/TolokGalina.jpg';
+import imageNP from '/images/users/question.jpg';
+import imageU1 from '/images/users/user1.png';
 
 /*вставка юзера ПЕРЕНЕСЬТИ*/
 window.updateUserImage = function() {
   const userSelect = document.getElementById('header_top_user');
   const userImageDiv = document.getElementById('userImage');
   const images = {
-      option1: "../../images/users/question.jpg", //  для нового пользователя
+      option1: imageNP, //  для нового пользователя
       option2: imageZE , // Зилевич Елизаветы
-      option3: '/images/user1.png', // Путь к изображению Исахановой Малики
-      option4: "../../images/users/TkachevOleg.jpg", 
-      option5: 'https://github.com/Kujavia/SputnikPro_test_2_1/blob/gh-pages/images/TolokGalina.jpg', // Путь к изображению Шварёва Данила
-      option6: 'https://github.com/Kujavia/SputnikPro_test_2_1/blob/master/public/images/TolokGalina.jpg' // Путь к изображению Толок Галина
+      option3: imageU1, // Путь к изображению Исахановой Малики
+      option4: imageTO , 
+      option5: imageU1, // Путь к изображению Шварёва Данила
+      option6: imageTG // Путь к изображению Толок Галина
   };
 
   const selectedValue = userSelect.value;
