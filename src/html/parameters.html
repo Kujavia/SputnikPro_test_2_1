@@ -1,0 +1,85 @@
+<div class="parameters_container">
+    
+    <section class="parameters_season">
+    <label for="parameters_season">Сезонность</label>
+    <select id="parameters_season">
+        <option value="option1">выкл</option>
+        <option value="option2">с очисткой от тренда</option>
+        <option value="option3">среднее</option>
+    </select>
+    <label for="parameters_season-smooth">Предварительное сглаживание</label>
+    <input type="checkbox" id="parameters_season-smooth">
+</section>
+
+<section class="parameters_oos">
+    <label for="parameters_oos">Очистка от OOS</label>
+    <select id="parameters_oos">
+        <option value="option1">выкл</option>
+        <option value="option2">по среднему остатку</option>
+        <option value="option3">по сумме с остатком</option>
+        <option value="option2">по доле ТТ</option>
+        <option value="option3">по количеству дней с остатком</option>
+    </select>
+    <label for="parameters_recovery-method">Метод восстановления</label>
+    <select id="parameters_recovery-method">
+        <option value="option1">пустое</option>
+        <option value="option2">как тренд</option>
+        <option value="option3">как среднее соседи</option>
+        <option value="option2">как среднее за прошлый период</option>
+    </select>
+</section>
+
+<section class="parameters_promo">
+    <label for="parameters_promo">Промо</label>
+    <select id="parameters_promo">
+        <option value="option1">выкл</option>
+        <option value="option2">пустое значение</option>
+        <option value="option3">деление на коэффициент</option>
+    </select>
+</section>
+
+<section class="parameters_sales_spikes">
+    <label for="parameters_sales_spikes">Всплески продаж</label>
+    <select id="parameters_sales_spikes">
+        <option value="option1">интерквартильный метод</option>
+        <option value="option2">стандартное отклонение</option>
+    </select>
+</section>
+
+<section class="container_parameters_sales_recovery">
+
+<p class="parameters_sales_recovery">Восстановление продаж</p>
+
+<div class="parameters_sales_recovery_radio">
+<label> 
+    <input type="radio" name="option" id="averageRadio"> По средней
+</label>
+  
+    <select>
+        <option value="param1">за предыдущий период</option>
+        <option value="param2">соседи</option>
+    </select>
+
+</div>
+
+<div class="parameters_sales_recovery_radio">
+<label>
+    <input type="radio" name="option" id="trendRadio"> Тенденция
+</label>
+
+    <select>
+        <option value="param1">за предыдущий период</option>
+        <option value="param2">за известный период</option>
+    </select>
+
+</div>
+
+</section>
+<section>
+    <button onclick="check_mark()" id="parameters_saveButton">Сохранить</button>
+    <span id="check-mark_button">✔️ сохранено</span>
+</section>
+
+</div>
+</div>
+

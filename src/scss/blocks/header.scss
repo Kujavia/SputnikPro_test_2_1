@@ -1,0 +1,86 @@
+.header_top {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    background-color: $primary-color;
+    //  background: linear-gradient(to top right, $second-color, #00008B);
+    height: 105px;
+    padding: 0 10px;
+    border-start-end-radius: 30px;
+    border-top-left-radius: 30px;
+    color: $white;
+    font-size: 0.8rem;
+    @media (min-width: 1920px) {
+      width: 1665px;
+     }
+     @media (min-width: 2560px) {
+      width: 1665px;
+     }
+   
+
+  
+    &__logo {
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    padding: 10px;
+    }
+    
+  
+    &__nav {
+      &-list {
+        display: flex;
+        margin-left: 25vw;
+        align-items: center;
+        list-style: none;
+        // justify-content: start;
+      }
+      &-item {
+        margin-left: 40px;
+      }
+      &-link {
+        color: $white;
+        text-decoration:none;
+        display: inline-block; /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный*/
+        line-height: 1; /*Задаём высоту строки в пикселях)*/
+        // font-weight: bold;
+        font-size: 15px;
+        font-family: $main-font;
+      }
+      &-link:hover {
+        color: $accent-color;
+        // text-decoration: underline;
+      }
+      &-link:after {
+        display: block; /*превращаем его в блочный элемент*/
+        content: ""; 
+        height: 1px;
+        width: 0%;
+        background-color:$accent-color;
+        transition: width 0.4s ease-in-out; 
+        }
+        &-link:hover:after{
+          width: 100%;
+        }
+
+    }
+}
+
+a:hover{ text-decoration-color: $primary-color;} /*перебила подчеркивание из установок*/
+
+#header_top__logo-img {
+    max-width: 60px; /*  макс ширина изображения */
+    height: auto; /*  пропорции  */
+    margin-right: 10px; /* Отступ между изображением и текстом */
+    border-radius: 10px;
+}
+
+.header_top__logo-text {
+    font-size: 24px;
+    color: $accent-color;
+    font-weight: bold;
+}
+
+#header_top_user{
+  margin-left: 5px;
+}

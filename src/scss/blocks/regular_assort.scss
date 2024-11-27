@@ -1,0 +1,62 @@
+.regular_assort_container{
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(7, auto);
+    gap: 10px;
+    padding-left: 40px; 
+    padding-top: 20px;
+    // width: 800px;
+}
+
+#regular_assort_calculate_forecastButton, #regular_assort_optimizeButton{
+width: 250px;
+background-color: coral;
+border-radius: 5px;
+height: 40px;
+grid-column: span 2;
+margin-left: 10%;
+margin-top: 15px;
+}
+.regular_assort_calculate{
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    #regular_assort_scenario{
+        margin-left: 20px;
+        height: 30px;
+    }
+}
+
+#regular_assort_exportButton,#regular_assort_resultsButton,#regular_assort_chartButton{
+    width: 150px;
+    grid-column: span 2;
+    margin: 5px;
+    margin-top: 20px;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.regular_assort__preview{
+    display:flex;
+    flex-direction: row;
+    margin-top: 20px;
+    .regular_assort__results{
+        display: flex;
+        flex-direction: column;
+        #tb_regular_assort_results{
+            width: 900px;
+            height: 350px;
+        }
+    }
+    .regular_assort__chart{
+        margin-left: 20px;
+        border: 1px lightblue solid;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+      justify-content: center;
+        #tb_regular_assort_chart{
+            width: 450px;
+        }
+    }
+}

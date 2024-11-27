@@ -1,0 +1,67 @@
+
+.action_container {
+    display: grid;
+    grid-template-columns: repeat(2, 350px); /* 3 столбца */
+    grid-template-rows: repeat(8, auto); /* 7 строк с автоматической высотой */
+    gap: 10px; /* Промежуток между элементами */
+    padding-left: 40px; 
+    padding-top: 20px;
+    // width: 800px;
+}
+
+/* ширина и высота полей ввода*/
+#action_scu, #action_region, #action_mechanics,#action_discount{
+    width: 200px;
+    height: 30px;
+}
+#action_date-creation,  #action_date-start, #action_date-finish {
+    width: 196px;
+    height: 30px;
+}
+
+#action_addition, #action_user-comment{
+    width: 200px;
+    height: 60px;
+}
+
+#action_saveButton{
+    grid-column: span 2;
+    width: 250px;
+    height: 30px;
+    margin-left: 50px;
+}
+
+#action_templateButton{
+    margin-top: 20px;
+    width: 200px;
+    height: 30px;
+}
+
+.action_selectFileButton {
+    grid-column: span 2; /* Выбор файла занимает две ячейки */
+    margin-top: 20px;
+    font-style: italic;
+    font-size: small;
+}
+#action_selectFileButton{
+    margin: 10px;
+}
+
+#action_downloadButton{
+    grid-column: span 2;
+    margin-top: 20px;
+    width: 200px;
+    height: 30px;
+}
+
+#action_export{
+    grid-column: span 2;
+    margin-top: 20px;
+    width: 200px;
+    height: 30px;
+    background-color:$button_preview_color;
+}
+
+.action_saveButton{
+    grid-column: span 2;
+}

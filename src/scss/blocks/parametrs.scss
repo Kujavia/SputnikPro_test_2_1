@@ -1,0 +1,63 @@
+.title-blocks{
+    margin-top: 10px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.parameters_container{
+    display: grid;
+    grid-template-columns: repeat(1, 450px);
+    grid-template-rows: repeat(7, auto); /* 7 строк с автоматической высотой */
+    gap: 30px;
+    padding-left: 40px; 
+    padding-top: 20px;
+}
+
+.parameters_season,.parameters_oos{
+    grid-column: span 1;
+
+}
+#parameters_season,#parameters_oos,#parameters_recovery-method, #parameters_promo, #parameters_sales_spikes{
+    margin-left: 20px;
+}
+.parameters_sales_recovery_radio{
+    display: grid;
+    grid-template-columns: repeat(2, auto); /* 2 столбца */
+    grid-template-rows: repeat(3, auto);
+    gap: 12px;
+}
+.container_parameters_sales_recovery{
+    display: grid;
+    grid-template-columns: repeat(1, auto); /* 2 столбца */
+    grid-template-rows: repeat(3, auto);
+}
+
+.parameters_sales_recovery{
+    grid-column: span 1;
+    display: flex;
+    justify-content: center;
+}
+
+.parameters_season, .container_parameters_sales_recovery, .parameters_oos, .parameters_promo, .parameters_sales_spikes{
+    border: 1px $frame_color solid;
+    width: 400px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+#parameters_oos{
+margin-left: 16.5%;
+}
+
+ #parameters_recovery-method, #parameters_promo,#parameters_oos{
+    width: 150px;
+ }
+ #parameters_promo{
+    margin-left: 33%;
+ }
+
+ #parameters_saveButton{
+width: 200px;
+margin-left: 100px;
+ }
+

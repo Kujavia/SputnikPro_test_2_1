@@ -1,0 +1,51 @@
+
+    <div class="regular_assort_container">
+        
+        <label for="regular_assort_method">Метод прогнозирования</label>
+        <select id="regular_assort_method">
+            <option value="option2">Скользящая средняя</option>
+            <option value="option1">Средневзвешенная</option>
+            <option value="option2">Линейная регрессия</option>
+            <option value="option1">Множестевнная регрессия</option>
+            <option value="option2">Полиномиальная регрессия</option>
+            <option value="option1">Хольта - Винтерса</option>
+            <option value="option2">Экспоненциальное сглаживание</option>
+            <option value="option2">Вероятностная модель</option>
+        </select>
+
+        <label for="regular_assort_period">Период</label>
+        <select id="regular_assort_period">
+            <option value="option2">1</option>
+            <option value="option1">2</option>
+            <option value="option2">3</option>
+            <option value="option1">4</option>
+            <option value="option2">5</option>
+            <option value="option1">6</option>
+            <option value="option2">7</option>
+            <option value="option2">8</option>
+        </select>
+
+        <div class="regular_assort_calculate">
+        <button id="regular_assort_calculate_forecastButton">Рассчитать прогноз</button>
+        <select id="regular_assort_scenario">
+            <option value="option2">сценарий 1</option>
+            <option value="option1">сценарий 2</option>
+            <option value="option2">сценарий 3</option>
+        </select>
+    </div>
+        <button id="regular_assort_optimizeButton">Оптимизировать</button>
+    </div>
+    
+    
+    <section class="regular_assort__preview">
+<div class="regular_assort__results">
+    <button onclick="tb_regular_assort__results()"  id="regular_assort_resultsButton">Preview</button>
+    <iframe  id="tb_regular_assort_results" src=""></iframe>
+</div>
+<div class="regular_assort__chart">
+    <button onclick="tb_regular_assort__chart()"  id="regular_assort_chartButton">Chart</button>
+    <iframe  id="tb_regular_assort_chart" src="" width="80%" height="200"></iframe>
+    </section>
+</div>
+
+    <button  id="regular_assort_exportButton">Экспорт данных</button>

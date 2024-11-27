@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.scss">
+    <link rel="icon" href="./public/images/logo_sputnik.jpg" type="image/png">
+
+    <title>SputnikPro</title>
+  </head>
+  <body>
+
+    <div class="container">
+
+    <header class="header_top">
+      <div class="header_top__logo">
+        <div><img id="header_top__logo-img" src="./public/images/logo_sputnik.jpg" alt="логотип компании Спутник"></div>
+        <div class="header_top__logo-text">SputnikPro</div>
+      </div>
+
+      <nav class="header_top__nav">
+        <ul class="header_top__nav-list">
+          <li class="header_top__nav-item">
+            <a href="#" class="header_top__nav-link forecast">
+              Цифровой ассистент</a
+            >
+          </li>
+          <li class="header_top__nav-item">
+            <a href="#" class="header_top__nav-link forecast">
+              Прогнозирование</a
+            >
+          </li>
+          <li class="header_top__nav-item">
+            <a href="#" class="header_top__nav-link">
+              Нормирование</a
+            >
+          </li>
+          <li class="header_top__nav-item">
+            <a href="#" class="header_top__nav-link"> Главная</a>
+          </li>
+          <li class="header_top__nav-item" id="userImage"></li>
+          <!-- <li class="header_top__nav-item">
+            <a href="#" class="header_top__nav-link">Сменить пользователя</a>
+          </li> -->
+
+         </li>
+         <li>
+          <select id="header_top_user" onchange="updateUserImage()">
+            <option value="option0">Выберите пользователя</option>
+            <option value="option1">Новый пользователь</option>
+            <option value="option2">Зилевич Елизавета</option>
+            <option value="option3">Исаханова Малика</option>
+            <option value="option4">Ткачёв Олег</option>
+            <option value="option6">Толок Галина</option>
+            <option value="option5">Шварёв Данила</option>
+            <option value="f"><a href="./index.html"></a></option>
+        </select>
+         </li>
+
+        </ul>
+      </nav>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+ <!-- МОООЕ BIG side bar-->
+ <div id="app">
+ <!-- begin #sidebar -->
+<div id="page-container" class="page-header-fixed page-sidebar-fixed">
+<div id="sidebar" class="sidebar">
+<!-- begin sidebar scrollbar -->
+<div data-scrollbar="true" data-height="100%">
+ <!-- begin sidebar nav -->
+
+ <ul class="nav">
+   <li class="has-sub">
+     <a href="javascript:;">
+       <b class="caret"></b>
+       <i class="fa fa-th-large"></i>
+       <span>Доп. сведения</span>
+     </a>
+     <ul class="sub-menu active">
+       <li><a href="#" value="action" onclick="showContent_action()">Акции</a></li>
+       <li><a onclick="showContent_locks()" href="#">Блокировки</a></li>
+       <li><a onclick="showContent_outputAssort()" href="#">Вывод</a></li>
+       <!-- <li><a onclick="showContent_newProducts()" href="#">Новинки</a></li> -->
+       <li><a onclick="showContent_listing()" href="#">Листинги</a></li>
+       <li><a onclick="showContent_tender()" href="#">Тендеры</a></li>
+       <li><a onclick="showContent_priceChange()" href="#">Изменение цен</a></li>
+     </ul>
+   </li>
+
+   <!-- /Параметры/ -->
+   <li><a href="#"  value="action" onclick="showContent_parameters()"><i class="fa fa-calendar"></i> <span>Параметры прогнозирования</span></a></li>
+<!-- /Параметры/ -->
+
+   <!-- Прогнозирование -->
+   <li class="has-sub">
+     <a href="javascript:;">
+       <b class="caret"></b>
+       <i class="fa fa-list-ol"></i>
+       <span>Прогнозирование <span class="label label-theme m-l-5"> </span></span> 
+     </a>
+     <ul class="sub-menu">
+       <!-- <li><a href="#">Промо <i class="fa fa-paper-plane text-theme m-l-5"></i></a></li> -->
+       <li><a onclick="showContent_seasonality()" href="#">Сезонность</a></li>
+       <li><a onclick="showContent_regular_assort()" href="#">Регулярный ассортимент</a></li>
+       <li><a onclick="showContent_promo()" href="#">Промо</a></li>
+       <li><a onclick="showContent_newProducts()" href="#">Новинки</a></li>
+       <li><a href="#">Вывод</a></li>
+
+       
+   <!-- Прогнозирование -->
+
+
+     </ul>
+   </li>
+   <li class="has-sub">
+     <a href="javascript:;">
+       <b class="caret"></b>
+       <i class="fa fa-table"></i>
+       <span>Планирование</span>
+     </a>
+     <ul class="sub-menu">
+       <li><a href="#">Basic Tables</a></li>
+       <li class="has-sub">
+         <a href="javascript:;"><b class="caret pull-right"></b> Managed Tables</a>
+         <ul class="sub-menu">
+           <li><a href="#">Default</a></li>
+           <li><a href="#">Autofill</a></li>
+           <li><a href="#">Buttons</a></li>
+           <li><a href="#">ColReorder</a></li>
+           
+         </ul>
+       </li>
+     </ul>
+   </li>
+   <li class="has-sub">
+     <a href="javascript:;">
+       <b class="caret"></b>
+       <i class="fa fa-star"></i> 
+       <span>Отчетность</span>
+     </a>
+     <ul class="sub-menu">
+       <li><a href="#" target="_blank">One Page Parallax</a></li>
+       <li><a href="#" target="_blank">Blog</a></li>
+       <li><a href="#" target="_blank">Forum</a></li>
+       <li><a href="#" target="_blank">E-Commerce</a></li>
+     </ul>
+   </li>
+   <li class="has-sub">
+     <a href="javascript:;">
+       <b class="caret"></b>
+       <i class="fa fa-envelope"></i>
+       <span>Справочники</span>
+     </a>
+     <ul class="sub-menu">
+       <li><a href="#">Сезонность</a></li>
+       <li><a href="#">Компании</a></li>
+       <li><a href="#">Категории</a></li>
+     </ul>
+   </li>
+   <li class="has-sub">
+     <a href="javascript:;">
+       <b class="caret"></b>
+       <i class="fa fa-chart-pie"></i>
+       <span>Visual</span>
+     </a>
+     <ul class="sub-menu">
+       <li><a href="#">Flot Chart</a></li>
+       <li><a href="#">Morris Chart</a></li>
+       <li><a href="#">Chart JS</a></li>
+       <li><a href="#">d3 Chart</a></li>
+     </ul>
+   </li>
+   <li><a href="#"><i class="fa fa-calendar"></i> <span>Calendar</span></a></li>
+   <li class="has-sub">
+     <a href="javascript:;">
+       <b class="caret"></b>
+       <i class="fa fa-map"></i>
+       <span>Управление доступом</span>
+     </a>
+     <ul class="sub-menu">
+       <li><a href="#">Vector</a></li>
+       <li><a href="#">In/out</a></li>
+     </ul>
+   </li>
+
+   <li class="has-sub">
+     <a href="javascript:;">
+       <b class="caret"></b>
+       <i class="fa fa-cogs"></i>
+       <span>Настройки</span>
+     </a>
+     <ul class="sub-menu">
+       <li><a href="#">Пользовательские</a></li>
+       <li><a href="#">Компании</a></li>
+       <li><a href="#">Версии</a></li>
+       <!-- <li><a href="#">Page with Right Sidebar</a></li>
+       <li><a href="#">Page with Minified Sidebar</a></li> -->
+     </ul>
+   </li>
+
+   <li class="has-sub">
+     <a href="javascript:;">
+       <b class="caret"></b>
+       <i class="fa fa-cubes"></i>
+       <span>Информация <span class="label label-theme m-l-5"></span></span>
+     </a>
+     <ul class="sub-menu">
+       <li><a href="javascript:;">Источники</a></li>
+       <li><a href="#">История</a></li>
+       <li><a href="#">Бонус</a></li>
+     </ul>
+   </li>
+
+   <li class="has-sub">
+     <a href="javascript:;">
+       <b class="caret"></b>
+       <i class="fa fa-medkit"></i>
+       <span>Help</span>
+     </a>
+     <ul class="sub-menu">
+       <li><a href="#">Поддержка</a></li>
+     </ul>
+   </li>
+
+   <!-- begin sidebar minify button -->
+   <li><a href="javascript:;" class="sidebar-minify-btn" data-click="sidebar-minify"><i class="fa fa-angle-double-left"></i></a></li>
+   <!-- end sidebar minify button -->
+
+   <!-- Пользователь -->
+   <!-- <li><a href="#"><i class="fa fa-user"></i><span>Пользователь</span></a></li> -->
+   <!-- Пользователь -->
+
+
+ <!-- end sidebar nav -->
+</div>
+<!-- end sidebar scrollbar -->
+</div>
+<div class="sidebar-bg"></div>
+<!-- end #sidebar -->
+
+<!-- <div id="content" class="content">
+<h1>Hello</h1>
+</div> -->
+
+</div>
+
+</div>
+  <!-- МОООЕ BIG side bar-->
+
+ 
+
+ 
+
+
+  <main class="main">
+      <div class="content" id="mainContent">
+          Пожалуйста, выберите необходимый пункт в панели навигации
+      </div>
+  </main>
+
+
+
+
+  <footer class="footer">
+    <nav class="footer__nav">
+      <ul class="footer__nav-list">
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Главная</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#section_1" class="footer__nav-link">О нас</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#section_2" class="footer__nav-link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- <div class="footer__rights">Все права защищены © 2024</div> -->
+  </footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="module" src="/src/js/main.js"></script>
+
+  </body>
+</html>

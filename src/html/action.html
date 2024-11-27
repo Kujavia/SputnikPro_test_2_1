@@ -1,0 +1,70 @@
+<div class="action_container-wrapper">
+<!-- <p class="title-blocks"> Дополнительные сведения => Акции</p> -->
+<div class="action_container">
+    
+    <label for="action_date-creation">Дата создания</label>
+    <input type="date" id="action_date-creation" name="action_date-creation" required>
+    
+    <label for="action_scu">Позиция</label>
+    <select id="action_scu">
+        <option value="option1">SCU1</option>
+        <option value="option2">SCU2</option>
+        <option value="option3">SCU3</option>
+        <option value="option4">...</option>
+    </select>
+
+    <label for="action_date-start">Дата начала акции</label>
+    <input type="date" id="action_date-start" name="action_date-start" required min="2023-01-01">
+
+    <label for="action_date-finish">Дата окончания акции</label>
+    <input type="date" id="action_date-finish" name="action_date-finish" required min="2023-01-01">
+
+    <label for="action_region">Территория</label>
+    <select id="action_region">
+        <option value="option1">Регион1</option>
+        <option value="option2">Регион2</option>
+        <option value="option3">Регион3</option>
+    </select>
+
+    <label for="action_mechanics">Механика акции</label>
+    <select id="action_mechanics">
+        <option value="option1">1+1</option>
+        <option value="option2">Клубная программа</option>
+        <option value="option3">Блогеры</option>
+        <option value="option4">Подарок</option>
+    </select>
+
+    <label for="action_discount">% скидки</label>
+    <select id="action_discount">
+        <option value="option1">10%</option>
+        <option value="option2">20%</option>
+        <option value="option3">30%</option>
+        <option value="option4">40%</option>
+        <option value="option4">50%</option>
+    </select>
+
+    <label for="action_addition" class="action_addition">Дополнительное описание</label>
+    <input type="text" id="action_addition" name="action_addition">
+
+    <label for="action_user-comment">Комментарий ответственного</label>
+    <input type="text" id="action_user-comment" name="action_user-comment">
+
+    <!--  сохранить -->
+<section class="action_saveButton">
+    <button onclick="check_mark()" id="action_saveButton">Сохранить изменения</button>
+    <span id="check-mark_button">✔️ сохранено</span>
+</section>
+      <!--  скачать шаблон -->
+    <button id="action_templateButton">Скачать шаблон</button>
+
+       <!-- выбрать файл-->
+    <label class="action_selectFileButton">
+        Загрузить данные, используя .xslx
+        <input type="file" id="action_selectFileButton" name="action_selectFileButton" accept="*/*">
+    </label>
+
+    <button id="action_downloadButton">Загрузить</button>
+
+    <button id="action_export">Экспорт данных</button>
+</div>
+</div>
