@@ -381,6 +381,7 @@ window.tb_seasonality = function(){
 /*вставка картинки*/
 
 
+import imageZE from '/images/users/ZilevichElizaveta.jpg';
 
 /*вставка юзера ПЕРЕНЕСЬТИ*/
 window.updateUserImage = function() {
@@ -388,7 +389,7 @@ window.updateUserImage = function() {
   const userImageDiv = document.getElementById('userImage');
   const images = {
       option1: "../../images/users/question.jpg", //  для нового пользователя
-      option2: "../../images/users/ZilevichElizaveta.jpg", // Зилевич Елизаветы
+      option2: imageZE , // Зилевич Елизаветы
       option3: '/images/user1.png', // Путь к изображению Исахановой Малики
       option4: "../../images/users/TkachevOleg.jpg", 
       option5: 'https://github.com/Kujavia/SputnikPro_test_2_1/blob/gh-pages/images/TolokGalina.jpg', // Путь к изображению Шварёва Данила
