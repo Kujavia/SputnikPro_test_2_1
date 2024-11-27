@@ -388,9 +388,9 @@ window.updateUserImage = function() {
   const userImageDiv = document.getElementById('userImage');
   const images = {
       option1: './public/images/question.jpg', // Путь к изображению для нового пользователя
-      option2: '/SputnikPro_test_2_1/public/images/ZilevichElizaveta.jpg', // Путь к изображению Зилевич Елизаветы
+      option2: "/images/ZilevichElizaveta.jpg", // Путь к изображению Зилевич Елизаветы
       option3: './public/images/user1.png', // Путь к изображению Исахановой Малики
-      option4: './public/images/TkachevOleg.jpg', // Путь к изображению Ткачёва Олега
+      option4: '/images/TkachevOleg.jpg', // Путь к изображению Ткачёва Олега
       option5: './public/images/user1.png', // Путь к изображению Шварёва Данила
       option6: './public/images/TolokGalina.jpg' // Путь к изображению Толок Галина
   };
