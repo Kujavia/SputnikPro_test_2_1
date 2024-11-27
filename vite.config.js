@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import {resolve} from "path";
 
 export default defineConfig({
-  base: '/SputnikPro_test_2/', 
+  base: '/SputnikPro_test_2_1/', 
   build: {
 		outDir: 'dist',
 		rollupOptions: {
